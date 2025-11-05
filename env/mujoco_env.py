@@ -85,18 +85,9 @@ class MujocoEnv(gym.Env):
     # ----------------------------
 
     def reset_model(self):
-        """
-        Reset the robot degrees of freedom (qpos and qvel).
-        Implement this in each subclass.
-        """
         raise NotImplementedError
 
     def viewer_setup(self):
-        """
-        This method is called when the viewer is initialized.
-        Optionally implement this method, if you need to tinker with camera position
-        and so forth.
-        """
         pass
 
     # -----------------------------

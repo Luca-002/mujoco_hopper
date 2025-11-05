@@ -1,8 +1,3 @@
-"""Sample script for training a control policy on the Hopper environment
-
-    Read the stable-baselines3 documentation and implement a training
-    pipeline with an RL algorithm of your choice between TRPO, PPO, and SAC.
-"""
 from stable_baselines3.common.callbacks import BaseCallback, CheckpointCallback
 from sympy import false
 
@@ -93,11 +88,6 @@ def main():
     env.save(name+"_vecnormalize.pkl")
     plot_results(log_dir)
     print("Saved model")
-    """
-        TODO:
-            - train a policy with stable-baselines3 on the source Hopper env 
-            - test the policy with stable-baselines3 on <source,target> Hopper envs (hint: see the evaluate_policy method of stable-baselines3)
-    """
 
 if __name__ == '__main__':
     main()
